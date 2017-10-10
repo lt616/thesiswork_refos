@@ -1,0 +1,6 @@
+kernel
+libs/libmuslc
+projects/refos
+projects/seL4_libs
+projects/util_libs
+seL4_tools

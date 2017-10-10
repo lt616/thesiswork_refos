@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "${REALGCC:-gcc}" "$@" -specs "/home/axjllt/Desktop/ori_refos/stage/x86/pc99/lib/musl-gcc.specs"

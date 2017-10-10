@@ -1,0 +1,13 @@
+7e306a51ecc7bf62edb68aa237223dc0c92c0f72		branch '2.0.x-compatible' of ssh://github.com/seL4/util_libs
+f8990f07e5f609189546a0690f71b6af9b2e2507		branch '2.1.x-compatible' of ssh://github.com/seL4/util_libs
+aa74fc9067b039734b8ff2e76b04e65b28515d10		branch '3.0.x-compatible' of ssh://github.com/seL4/util_libs
+755a5c6fd82ff8cc29f5c5b11a3f16d2e8047df7		branch '3.1.x-compatible' of ssh://github.com/seL4/util_libs
+38d1eb828e8deb39e69423af46a02c57b1508ec4		branch '3.2.x-compatible' of ssh://github.com/seL4/util_libs
+b8787e8db4c73a44c1efa3dc48e3a494e6aa924c		branch '4.0.x-compatible' of ssh://github.com/seL4/util_libs
+1139f4facb089861aea3661d9be342262d1d6139		branch '5.0.x-compatible' of ssh://github.com/seL4/util_libs
+accfcac9308f84535d842bbfe2b321ac1374e2c5		branch '5.1.x-compatible' of ssh://github.com/seL4/util_libs
+131c0ba4f7d7da631d1788cdb37ec7943398e993		branch '5.2.x-compatible' of ssh://github.com/seL4/util_libs
+7e373939d0dbb5951948a76ba3089d9ceaec3cde		branch '5.2.x-mcs-compatible' of ssh://github.com/seL4/util_libs
+c7846bf2995629a3781f0e2f65f5a8c5520b5775		branch '6.0.x-compatible' of ssh://github.com/seL4/util_libs
+74b77a56cf4b41dcecce331f0e8457e0eb4ff42f		branch '7.0.x-compatible' of ssh://github.com/seL4/util_libs
+10490e56d77be1f8c38cb85b80dcc1008ec25f97		branch 'master' of ssh://github.com/seL4/util_libs

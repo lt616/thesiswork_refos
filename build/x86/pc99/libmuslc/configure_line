@@ -1,0 +1,1 @@
+--srcdir=/home/axjllt/Desktop/ori_refos/libs/libmuslc --prefix=/home/axjllt/Desktop/ori_refos/stage/x86/pc99 --enable-debug --target=i386 --enable-warnings --disable-shared --enable-static

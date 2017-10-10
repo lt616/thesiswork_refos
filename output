@@ -1,0 +1,403 @@
+[Enter `^Ec?' for help]
+�
+PXELINUX 6.03 PXE 20150816 Copyright (C) 1994-2014 H. Peter Anvin et al
+boot: 
+Loading sel4kernel... ok
+Loading sel4rootserver... ok
+
+Boot config: parsing cmdline 'sel4kernel'
+Boot config: console_port = 0x3f8
+Boot config: debug_port = 0x3f8
+Boot config: disable_iommu = false
+Parsing GRUB physical memory map
+	Physical Memory Region from 0 size 9d800 type 1
+	Physical Memory Region from 9d800 size 2800 type 2
+	Physical Memory Region from e0000 size 20000 type 2
+	Physical Memory Region from 100000 size d5226000 type 1
+Adding physical memory region 0x100000-0x1fc00000
+	Physical Memory Region from d5326000 size 7000 type 4
+	Physical Memory Region from d532d000 size 430000 type 1
+	Physical Memory Region from d575d000 size 483000 type 2
+	Physical Memory Region from d5be0000 size 530b000 type 1
+	Physical Memory Region from daeeb000 size 115000 type 2
+	Physical Memory Region from db000000 size 760000 type 1
+	Physical Memory Region from db760000 size a0000 type 2
+	Physical Memory Region from db800000 size 7ae000 type 1
+	Physical Memory Region from dbfae000 size 52000 type 3
+	Physical Memory Region from dc000000 size 171d000 type 1
+	Physical Memory Region from dd71d000 size e3000 type 4
+	Physical Memory Region from dd800000 size 1612000 type 1
+	Physical Memory Region from dee12000 size 1ee000 type 2
+	Physical Memory Region from f8000000 size 4000000 type 2
+	Physical Memory Region from fec00000 size 1000 type 2
+	Physical Memory Region from fed00000 size 4000 type 2
+	Physical Memory Region from fed1c000 size 4000 type 2
+	Physical Memory Region from fee00000 size 1000 type 2
+	Physical Memory Region from ff000000 size 1000000 type 2
+	Physical memory region not addressable
+Multiboot gave us no video information
+Kernel loaded to: start=0x100000 end=0x140000 size=0x40000 entry=0x10005e
+ACPI: RSDP paddr=0xf0490
+ACPI: RSDP vaddr=0xdfcf0490
+ACPI: RSDT paddr=0xdbfef028
+ACPI: RSDT vaddr=0xdffef028
+ACPI: FADT paddr=0xdbfef110
+ACPI: FADT vaddr=0xdffef110
+ACPI: FADT flags=0x384a5
+ACPI: DMAR paddr=0xdbffec90
+ACPI: DMAR vaddr=0xdfffec90
+ACPI: IOMMU host address width: 39
+	ACPI: registering RMRR entry for region for device: bus=0x0 dev=0x1d fun=0x0
+	ACPI: registering RMRR entry for region for device: bus=0x0 dev=0x1a fun=0x0
+	ACPI: registering RMRR entry for region for device: bus=0x0 dev=0x14 fun=0x0
+ACPI: 1 IOMMUs detected
+ACPI: MADT paddr=0xdbffa568
+ACPI: MADT vaddr=0xdfffa568
+ACPI: MADT apic_addr=0xfee00000
+ACPI: MADT flags=0x1
+ACPI: MADT_APIC apic_id=0x0
+ACPI: MADT_APIC apic_id=0x2
+ACPI: Not recording this APIC, only support 1
+ACPI: MADT_APIC apic_id=0x4
+ACPI: Not recording this APIC, only support 1
+ACPI: MADT_APIC apic_id=0x6
+ACPI: Not recording this APIC, only support 1
+ACPI: MADT_IOAPIC ioapic_id=8 ioapic_addr=0xfec00000 gsib=0
+ACPI: MADT_ISO bus=0 source=0 gsi=2 flags=0x0
+ACPI: MADT_ISO bus=0 source=9 gsi=9 flags=0xd
+ACPI: 1 CPU(s) detected
+Detected 1 IOAPICs, but configured to use PIC instead
+Detected 1 boot module(s):
+  module #0: start=0x1c5000 end=0x7ae888 size=0x5e9888 name='sel4rootserver'
+ELF-loading userland images from boot modules:
+size=0x6c9000 v_entry=0x80600b4 v_start=0x8048000 v_end=0x8711000 p_start=0x7af000 p_end=0xe78000
+Moving loaded userland images to final location: from=0x7af000 to=0x140000 size=0x6c9000
+Starting node #0 with APIC ID 0
+IOMMU 0x0: 8-bit domain IDs supported
+IOMMU: Using 4 page-table levels (max. supported: 4)
+IOMMU: Create VTD context table for PCI bus 0x0 (pptr=0xe080a000)
+IOMMU: Create VTD context table for PCI bus 0x1 (pptr=0xe0817000)
+IOMMU: Create VTD context table for PCI bus 0x2 (pptr=0xe0818000)
+IOMMU: Create VTD context table for PCI bus 0x3 (pptr=0xe0819000)
+IOMMU: Create VTD context table for PCI bus 0x4 (pptr=0xe081a000)
+IOMMU: Create VTD context table for PCI bus 0x5 (pptr=0xe081b000)
+IOMMU: Create VTD context table for PCI bus 0x6 (pptr=0xe081c000)
+IOMMU: Create VTD context table for PCI bus 0x7 (pptr=0xe081d000)
+IOMMU: Create VTD context table for PCI bus 0x8 (pptr=0xe081e000)
+IOMMU: Create VTD context table for PCI bus 0x9 (pptr=0xe081f000)
+IOMMU: Create VTD context table for PCI bus 0xa (pptr=0xe0820000)
+IOMMU: Create VTD context table for PCI bus 0xb (pptr=0xe0821000)
+IOMMU: Create VTD context table for PCI bus 0xc (pptr=0xe0822000)
+IOMMU: Create VTD context table for PCI bus 0xd (pptr=0xe0823000)
+IOMMU: Create VTD context table for PCI bus 0xe (pptr=0xe0824000)
+IOMMU: Create VTD context table for PCI bus 0xf (pptr=0xe0825000)
+IOMMU: Create VTD context table for PCI bus 0x10 (pptr=0xe0826000)
+IOMMU: Create VTD context table for PCI bus 0x11 (pptr=0xe0827000)
+IOMMU: Create VTD context table for PCI bus 0x12 (pptr=0xe0828000)
+IOMMU: Create VTD context table for PCI bus 0x13 (pptr=0xe0829000)
+IOMMU: Create VTD context table for PCI bus 0x14 (pptr=0xe082a000)
+IOMMU: Create VTD context table for PCI bus 0x15 (pptr=0xe082b000)
+IOMMU: Create VTD context table for PCI bus 0x16 (pptr=0xe082c000)
+IOMMU: Create VTD context table for PCI bus 0x17 (pptr=0xe082d000)
+IOMMU: Create VTD context table for PCI bus 0x18 (pptr=0xe082e000)
+IOMMU: Create VTD context table for PCI bus 0x19 (pptr=0xe082f000)
+IOMMU: Create VTD context table for PCI bus 0x1a (pptr=0xe0830000)
+IOMMU: Create VTD context table for PCI bus 0x1b (pptr=0xe0831000)
+IOMMU: Create VTD context table for PCI bus 0x1c (pptr=0xe0832000)
+IOMMU: Create VTD context table for PCI bus 0x1d (pptr=0xe0833000)
+IOMMU: Create VTD context table for PCI bus 0x1e (pptr=0xe0834000)
+IOMMU: Create VTD context table for PCI bus 0x1f (pptr=0xe0835000)
+IOMMU: Create VTD context table for PCI bus 0x20 (pptr=0xe0836000)
+IOMMU: Create VTD context table for PCI bus 0x21 (pptr=0xe0837000)
+IOMMU: Create VTD context table for PCI bus 0x22 (pptr=0xe0838000)
+IOMMU: Create VTD context table for PCI bus 0x23 (pptr=0xe0839000)
+IOMMU: Create VTD context table for PCI bus 0x24 (pptr=0xe083a000)
+IOMMU: Create VTD context table for PCI bus 0x25 (pptr=0xe083b000)
+IOMMU: Create VTD context table for PCI bus 0x26 (pptr=0xe083c000)
+IOMMU: Create VTD context table for PCI bus 0x27 (pptr=0xe083d000)
+IOMMU: Create VTD context table for PCI bus 0x28 (pptr=0xe083e000)
+IOMMU: Create VTD context table for PCI bus 0x29 (pptr=0xe083f000)
+IOMMU: Create VTD context table for PCI bus 0x2a (pptr=0xe0840000)
+IOMMU: Create VTD context table for PCI bus 0x2b (pptr=0xe0841000)
+IOMMU: Create VTD context table for PCI bus 0x2c (pptr=0xe0842000)
+IOMMU: Create VTD context table for PCI bus 0x2d (pptr=0xe0843000)
+IOMMU: Create VTD context table for PCI bus 0x2e (pptr=0xe0844000)
+IOMMU: Create VTD context table for PCI bus 0x2f (pptr=0xe0845000)
+IOMMU: Create VTD context table for PCI bus 0x30 (pptr=0xe0846000)
+IOMMU: Create VTD context table for PCI bus 0x31 (pptr=0xe0847000)
+IOMMU: Create VTD context table for PCI bus 0x32 (pptr=0xe0848000)
+IOMMU: Create VTD context table for PCI bus 0x33 (pptr=0xe0849000)
+IOMMU: Create VTD context table for PCI bus 0x34 (pptr=0xe084a000)
+IOMMU: Create VTD context table for PCI bus 0x35 (pptr=0xe084b000)
+IOMMU: Create VTD context table for PCI bus 0x36 (pptr=0xe084c000)
+IOMMU: Create VTD context table for PCI bus 0x37 (pptr=0xe084d000)
+IOMMU: Create VTD context table for PCI bus 0x38 (pptr=0xe084e000)
+IOMMU: Create VTD context table for PCI bus 0x39 (pptr=0xe084f000)
+IOMMU: Create VTD context table for PCI bus 0x3a (pptr=0xe0850000)
+IOMMU: Create VTD context table for PCI bus 0x3b (pptr=0xe0851000)
+IOMMU: Create VTD context table for PCI bus 0x3c (pptr=0xe0852000)
+IOMMU: Create VTD context table for PCI bus 0x3d (pptr=0xe0853000)
+IOMMU: Create VTD context table for PCI bus 0x3e (pptr=0xe0854000)
+IOMMU: Create VTD context table for PCI bus 0x3f (pptr=0xe0855000)
+IOMMU: Create VTD context table for PCI bus 0x40 (pptr=0xe0856000)
+IOMMU: Create VTD context table for PCI bus 0x41 (pptr=0xe0857000)
+IOMMU: Create VTD context table for PCI bus 0x42 (pptr=0xe0858000)
+IOMMU: Create VTD context table for PCI bus 0x43 (pptr=0xe0859000)
+IOMMU: Create VTD context table for PCI bus 0x44 (pptr=0xe085a000)
+IOMMU: Create VTD context table for PCI bus 0x45 (pptr=0xe085b000)
+IOMMU: Create VTD context table for PCI bus 0x46 (pptr=0xe085c000)
+IOMMU: Create VTD context table for PCI bus 0x47 (pptr=0xe085d000)
+IOMMU: Create VTD context table for PCI bus 0x48 (pptr=0xe085e000)
+IOMMU: Create VTD context table for PCI bus 0x49 (pptr=0xe085f000)
+IOMMU: Create VTD context table for PCI bus 0x4a (pptr=0xe0860000)
+IOMMU: Create VTD context table for PCI bus 0x4b (pptr=0xe0861000)
+IOMMU: Create VTD context table for PCI bus 0x4c (pptr=0xe0862000)
+IOMMU: Create VTD context table for PCI bus 0x4d (pptr=0xe0863000)
+IOMMU: Create VTD context table for PCI bus 0x4e (pptr=0xe0864000)
+IOMMU: Create VTD context table for PCI bus 0x4f (pptr=0xe0865000)
+IOMMU: Create VTD context table for PCI bus 0x50 (pptr=0xe0866000)
+IOMMU: Create VTD context table for PCI bus 0x51 (pptr=0xe0867000)
+IOMMU: Create VTD context table for PCI bus 0x52 (pptr=0xe0868000)
+IOMMU: Create VTD context table for PCI bus 0x53 (pptr=0xe0869000)
+IOMMU: Create VTD context table for PCI bus 0x54 (pptr=0xe086a000)
+IOMMU: Create VTD context table for PCI bus 0x55 (pptr=0xe086b000)
+IOMMU: Create VTD context table for PCI bus 0x56 (pptr=0xe086c000)
+IOMMU: Create VTD context table for PCI bus 0x57 (pptr=0xe086d000)
+IOMMU: Create VTD context table for PCI bus 0x58 (pptr=0xe086e000)
+IOMMU: Create VTD context table for PCI bus 0x59 (pptr=0xe086f000)
+IOMMU: Create VTD context table for PCI bus 0x5a (pptr=0xe0870000)
+IOMMU: Create VTD context table for PCI bus 0x5b (pptr=0xe0871000)
+IOMMU: Create VTD context table for PCI bus 0x5c (pptr=0xe0872000)
+IOMMU: Create VTD context table for PCI bus 0x5d (pptr=0xe0873000)
+IOMMU: Create VTD context table for PCI bus 0x5e (pptr=0xe0874000)
+IOMMU: Create VTD context table for PCI bus 0x5f (pptr=0xe0875000)
+IOMMU: Create VTD context table for PCI bus 0x60 (pptr=0xe0876000)
+IOMMU: Create VTD context table for PCI bus 0x61 (pptr=0xe0877000)
+IOMMU: Create VTD context table for PCI bus 0x62 (pptr=0xe0878000)
+IOMMU: Create VTD context table for PCI bus 0x63 (pptr=0xe0879000)
+IOMMU: Create VTD context table for PCI bus 0x64 (pptr=0xe087a000)
+IOMMU: Create VTD context table for PCI bus 0x65 (pptr=0xe087b000)
+IOMMU: Create VTD context table for PCI bus 0x66 (pptr=0xe087c000)
+IOMMU: Create VTD context table for PCI bus 0x67 (pptr=0xe087d000)
+IOMMU: Create VTD context table for PCI bus 0x68 (pptr=0xe087e000)
+IOMMU: Create VTD context table for PCI bus 0x69 (pptr=0xe087f000)
+IOMMU: Create VTD context table for PCI bus 0x6a (pptr=0xe0880000)
+IOMMU: Create VTD context table for PCI bus 0x6b (pptr=0xe0881000)
+IOMMU: Create VTD context table for PCI bus 0x6c (pptr=0xe0882000)
+IOMMU: Create VTD context table for PCI bus 0x6d (pptr=0xe0883000)
+IOMMU: Create VTD context table for PCI bus 0x6e (pptr=0xe0884000)
+IOMMU: Create VTD context table for PCI bus 0x6f (pptr=0xe0885000)
+IOMMU: Create VTD context table for PCI bus 0x70 (pptr=0xe0886000)
+IOMMU: Create VTD context table for PCI bus 0x71 (pptr=0xe0887000)
+IOMMU: Create VTD context table for PCI bus 0x72 (pptr=0xe0888000)
+IOMMU: Create VTD context table for PCI bus 0x73 (pptr=0xe0889000)
+IOMMU: Create VTD context table for PCI bus 0x74 (pptr=0xe088a000)
+IOMMU: Create VTD context table for PCI bus 0x75 (pptr=0xe088b000)
+IOMMU: Create VTD context table for PCI bus 0x76 (pptr=0xe088c000)
+IOMMU: Create VTD context table for PCI bus 0x77 (pptr=0xe088d000)
+IOMMU: Create VTD context table for PCI bus 0x78 (pptr=0xe088e000)
+IOMMU: Create VTD context table for PCI bus 0x79 (pptr=0xe088f000)
+IOMMU: Create VTD context table for PCI bus 0x7a (pptr=0xe0890000)
+IOMMU: Create VTD context table for PCI bus 0x7b (pptr=0xe0891000)
+IOMMU: Create VTD context table for PCI bus 0x7c (pptr=0xe0892000)
+IOMMU: Create VTD context table for PCI bus 0x7d (pptr=0xe0893000)
+IOMMU: Create VTD context table for PCI bus 0x7e (pptr=0xe0894000)
+IOMMU: Create VTD context table for PCI bus 0x7f (pptr=0xe0895000)
+IOMMU: Create VTD context table for PCI bus 0x80 (pptr=0xe0896000)
+IOMMU: Create VTD context table for PCI bus 0x81 (pptr=0xe0897000)
+IOMMU: Create VTD context table for PCI bus 0x82 (pptr=0xe0898000)
+IOMMU: Create VTD context table for PCI bus 0x83 (pptr=0xe0899000)
+IOMMU: Create VTD context table for PCI bus 0x84 (pptr=0xe089a000)
+IOMMU: Create VTD context table for PCI bus 0x85 (pptr=0xe089b000)
+IOMMU: Create VTD context table for PCI bus 0x86 (pptr=0xe089c000)
+IOMMU: Create VTD context table for PCI bus 0x87 (pptr=0xe089d000)
+IOMMU: Create VTD context table for PCI bus 0x88 (pptr=0xe089e000)
+IOMMU: Create VTD context table for PCI bus 0x89 (pptr=0xe089f000)
+IOMMU: Create VTD context table for PCI bus 0x8a (pptr=0xe08a0000)
+IOMMU: Create VTD context table for PCI bus 0x8b (pptr=0xe08a1000)
+IOMMU: Create VTD context table for PCI bus 0x8c (pptr=0xe08a2000)
+IOMMU: Create VTD context table for PCI bus 0x8d (pptr=0xe08a3000)
+IOMMU: Create VTD context table for PCI bus 0x8e (pptr=0xe08a4000)
+IOMMU: Create VTD context table for PCI bus 0x8f (pptr=0xe08a5000)
+IOMMU: Create VTD context table for PCI bus 0x90 (pptr=0xe08a6000)
+IOMMU: Create VTD context table for PCI bus 0x91 (pptr=0xe08a7000)
+IOMMU: Create VTD context table for PCI bus 0x92 (pptr=0xe08a8000)
+IOMMU: Create VTD context table for PCI bus 0x93 (pptr=0xe08a9000)
+IOMMU: Create VTD context table for PCI bus 0x94 (pptr=0xe08aa000)
+IOMMU: Create VTD context table for PCI bus 0x95 (pptr=0xe08ab000)
+IOMMU: Create VTD context table for PCI bus 0x96 (pptr=0xe08ac000)
+IOMMU: Create VTD context table for PCI bus 0x97 (pptr=0xe08ad000)
+IOMMU: Create VTD context table for PCI bus 0x98 (pptr=0xe08ae000)
+IOMMU: Create VTD context table for PCI bus 0x99 (pptr=0xe08af000)
+IOMMU: Create VTD context table for PCI bus 0x9a (pptr=0xe08b0000)
+IOMMU: Create VTD context table for PCI bus 0x9b (pptr=0xe08b1000)
+IOMMU: Create VTD context table for PCI bus 0x9c (pptr=0xe08b2000)
+IOMMU: Create VTD context table for PCI bus 0x9d (pptr=0xe08b3000)
+IOMMU: Create VTD context table for PCI bus 0x9e (pptr=0xe08b4000)
+IOMMU: Create VTD context table for PCI bus 0x9f (pptr=0xe08b5000)
+IOMMU: Create VTD context table for PCI bus 0xa0 (pptr=0xe08b6000)
+IOMMU: Create VTD context table for PCI bus 0xa1 (pptr=0xe08b7000)
+IOMMU: Create VTD context table for PCI bus 0xa2 (pptr=0xe08b8000)
+IOMMU: Create VTD context table for PCI bus 0xa3 (pptr=0xe08b9000)
+IOMMU: Create VTD context table for PCI bus 0xa4 (pptr=0xe08ba000)
+IOMMU: Create VTD context table for PCI bus 0xa5 (pptr=0xe08bb000)
+IOMMU: Create VTD context table for PCI bus 0xa6 (pptr=0xe08bc000)
+IOMMU: Create VTD context table for PCI bus 0xa7 (pptr=0xe08bd000)
+IOMMU: Create VTD context table for PCI bus 0xa8 (pptr=0xe08be000)
+IOMMU: Create VTD context table for PCI bus 0xa9 (pptr=0xe08bf000)
+IOMMU: Create VTD context table for PCI bus 0xaa (pptr=0xe08c0000)
+IOMMU: Create VTD context table for PCI bus 0xab (pptr=0xe08c1000)
+IOMMU: Create VTD context table for PCI bus 0xac (pptr=0xe08c2000)
+IOMMU: Create VTD context table for PCI bus 0xad (pptr=0xe08c3000)
+IOMMU: Create VTD context table for PCI bus 0xae (pptr=0xe08c4000)
+IOMMU: Create VTD context table for PCI bus 0xaf (pptr=0xe08c5000)
+IOMMU: Create VTD context table for PCI bus 0xb0 (pptr=0xe08c6000)
+IOMMU: Create VTD context table for PCI bus 0xb1 (pptr=0xe08c7000)
+IOMMU: Create VTD context table for PCI bus 0xb2 (pptr=0xe08c8000)
+IOMMU: Create VTD context table for PCI bus 0xb3 (pptr=0xe08c9000)
+IOMMU: Create VTD context table for PCI bus 0xb4 (pptr=0xe08ca000)
+IOMMU: Create VTD context table for PCI bus 0xb5 (pptr=0xe08cb000)
+IOMMU: Create VTD context table for PCI bus 0xb6 (pptr=0xe08cc000)
+IOMMU: Create VTD context table for PCI bus 0xb7 (pptr=0xe08cd000)
+IOMMU: Create VTD context table for PCI bus 0xb8 (pptr=0xe08ce000)
+IOMMU: Create VTD context table for PCI bus 0xb9 (pptr=0xe08cf000)
+IOMMU: Create VTD context table for PCI bus 0xba (pptr=0xe08d0000)
+IOMMU: Create VTD context table for PCI bus 0xbb (pptr=0xe08d1000)
+IOMMU: Create VTD context table for PCI bus 0xbc (pptr=0xe08d2000)
+IOMMU: Create VTD context table for PCI bus 0xbd (pptr=0xe08d3000)
+IOMMU: Create VTD context table for PCI bus 0xbe (pptr=0xe08d4000)
+IOMMU: Create VTD context table for PCI bus 0xbf (pptr=0xe08d5000)
+IOMMU: Create VTD context table for PCI bus 0xc0 (pptr=0xe08d6000)
+IOMMU: Create VTD context table for PCI bus 0xc1 (pptr=0xe08d7000)
+IOMMU: Create VTD context table for PCI bus 0xc2 (pptr=0xe08d8000)
+IOMMU: Create VTD context table for PCI bus 0xc3 (pptr=0xe08d9000)
+IOMMU: Create VTD context table for PCI bus 0xc4 (pptr=0xe08da000)
+IOMMU: Create VTD context table for PCI bus 0xc5 (pptr=0xe08db000)
+IOMMU: Create VTD context table for PCI bus 0xc6 (pptr=0xe08dc000)
+IOMMU: Create VTD context table for PCI bus 0xc7 (pptr=0xe08dd000)
+IOMMU: Create VTD context table for PCI bus 0xc8 (pptr=0xe08de000)
+IOMMU: Create VTD context table for PCI bus 0xc9 (pptr=0xe08df000)
+IOMMU: Create VTD context table for PCI bus 0xca (pptr=0xe08e0000)
+IOMMU: Create VTD context table for PCI bus 0xcb (pptr=0xe08e1000)
+IOMMU: Create VTD context table for PCI bus 0xcc (pptr=0xe08e2000)
+IOMMU: Create VTD context table for PCI bus 0xcd (pptr=0xe08e3000)
+IOMMU: Create VTD context table for PCI bus 0xce (pptr=0xe08e4000)
+IOMMU: Create VTD context table for PCI bus 0xcf (pptr=0xe08e5000)
+IOMMU: Create VTD context table for PCI bus 0xd0 (pptr=0xe08e6000)
+IOMMU: Create VTD context table for PCI bus 0xd1 (pptr=0xe08e7000)
+IOMMU: Create VTD context table for PCI bus 0xd2 (pptr=0xe08e8000)
+IOMMU: Create VTD context table for PCI bus 0xd3 (pptr=0xe08e9000)
+IOMMU: Create VTD context table for PCI bus 0xd4 (pptr=0xe08ea000)
+IOMMU: Create VTD context table for PCI bus 0xd5 (pptr=0xe08eb000)
+IOMMU: Create VTD context table for PCI bus 0xd6 (pptr=0xe08ec000)
+IOMMU: Create VTD context table for PCI bus 0xd7 (pptr=0xe08ed000)
+IOMMU: Create VTD context table for PCI bus 0xd8 (pptr=0xe08ee000)
+IOMMU: Create VTD context table for PCI bus 0xd9 (pptr=0xe08ef000)
+IOMMU: Create VTD context table for PCI bus 0xda (pptr=0xe08f0000)
+IOMMU: Create VTD context table for PCI bus 0xdb (pptr=0xe08f1000)
+IOMMU: Create VTD context table for PCI bus 0xdc (pptr=0xe08f2000)
+IOMMU: Create VTD context table for PCI bus 0xdd (pptr=0xe08f3000)
+IOMMU: Create VTD context table for PCI bus 0xde (pptr=0xe08f4000)
+IOMMU: Create VTD context table for PCI bus 0xdf (pptr=0xe08f5000)
+IOMMU: Create VTD context table for PCI bus 0xe0 (pptr=0xe08f6000)
+IOMMU: Create VTD context table for PCI bus 0xe1 (pptr=0xe08f7000)
+IOMMU: Create VTD context table for PCI bus 0xe2 (pptr=0xe08f8000)
+IOMMU: Create VTD context table for PCI bus 0xe3 (pptr=0xe08f9000)
+IOMMU: Create VTD context table for PCI bus 0xe4 (pptr=0xe08fa000)
+IOMMU: Create VTD context table for PCI bus 0xe5 (pptr=0xe08fb000)
+IOMMU: Create VTD context table for PCI bus 0xe6 (pptr=0xe08fc000)
+IOMMU: Create VTD context table for PCI bus 0xe7 (pptr=0xe08fd000)
+IOMMU: Create VTD context table for PCI bus 0xe8 (pptr=0xe08fe000)
+IOMMU: Create VTD context table for PCI bus 0xe9 (pptr=0xe08ff000)
+IOMMU: Create VTD context table for PCI bus 0xea (pptr=0xe0900000)
+IOMMU: Create VTD context table for PCI bus 0xeb (pptr=0xe0901000)
+IOMMU: Create VTD context table for PCI bus 0xec (pptr=0xe0902000)
+IOMMU: Create VTD context table for PCI bus 0xed (pptr=0xe0903000)
+IOMMU: Create VTD context table for PCI bus 0xee (pptr=0xe0904000)
+IOMMU: Create VTD context table for PCI bus 0xef (pptr=0xe0905000)
+IOMMU: Create VTD context table for PCI bus 0xf0 (pptr=0xe0906000)
+IOMMU: Create VTD context table for PCI bus 0xf1 (pptr=0xe0907000)
+IOMMU: Create VTD context table for PCI bus 0xf2 (pptr=0xe0908000)
+IOMMU: Create VTD context table for PCI bus 0xf3 (pptr=0xe0909000)
+IOMMU: Create VTD context table for PCI bus 0xf4 (pptr=0xe090a000)
+IOMMU: Create VTD context table for PCI bus 0xf5 (pptr=0xe090b000)
+IOMMU: Create VTD context table for PCI bus 0xf6 (pptr=0xe090c000)
+IOMMU: Create VTD context table for PCI bus 0xf7 (pptr=0xe090d000)
+IOMMU: Create VTD context table for PCI bus 0xf8 (pptr=0xe090e000)
+IOMMU: Create VTD context table for PCI bus 0xf9 (pptr=0xe090f000)
+IOMMU: Create VTD context table for PCI bus 0xfa (pptr=0xe0910000)
+IOMMU: Create VTD context table for PCI bus 0xfb (pptr=0xe0911000)
+IOMMU: Create VTD context table for PCI bus 0xfc (pptr=0xe0912000)
+IOMMU: Create VTD context table for PCI bus 0xfd (pptr=0xe0913000)
+IOMMU: Create VTD context table for PCI bus 0xfe (pptr=0xe0914000)
+IOMMU: Create VTD context table for PCI bus 0xff (pptr=0xe0915000)
+IOMMU 0x0: enabling... enabled
+Booting all finished, dropped to user space
+Received reserved IRQ: 124IOMMU: DMA read page fault from bus/dev/fun 0xd0 on address 0x0:dee14000 with reason code 0x6
+1 untypeds of size 11
+4 untypeds of size 12
+5 untypeds of size 13
+5 untypeds of size 14
+5 untypeds of size 15
+5 untypeds of size 16
+6 untypeds of size 17
+6 untypeds of size 18
+6 untypeds of size 19
+3 untypeds of size 20
+3 untypeds of size 21
+4 untypeds of size 22
+3 untypeds of size 23
+2 untypeds of size 24
+3 untypeds of size 25
+3 untypeds of size 26
+3 untypeds of size 27
+1 untypeds of size 28
+6 untypeds of size 29
+Searching for ACPI_SIG_RSDP
+[;1;33mWARNING[0m ram_dspace_set_to_paddr(): No such device 0xe0000.
+[;1;31mERROR[0m dev_io_map(): Could not open and map device dataspace.
+Failed to map physical page 0xe0000
+Failed to find rsdp
+arguments cannot be NULL
+not implemented
+ ______     ______     ______   ______     ______    
+/\  == \   /\  ___\   /\  ___\ /\  __ \   /\  ___\   
+\ \  __<   \ \  __\   \ \  __\ \ \ \/\ \  \ \___  \  
+ \ \_\ \_\  \ \_____\  \ \_\    \ \_____\  \/\_____\ 
+  \/_/ /_/   \/_____/   \/_/     \/_____/   \/_____/ 
+
+-----------------------------------------------------
+    Built on the seL4 microkernel.
+    (c) Copyright 2016 Data61, CSIRO
+-----------------------------------------------------
+refos:/$ 
+[forced to `spy' mode by axjllt@localhost]
+console         exec
+exec: missing parameter.
+refos:/$ exec help
+-terminal: help: application not found
+refos:/$ help
+RefOS Terminal Help:
+    clear - Clear the screen.
+    help - Display this help screen.
+    exec - Run an executable.
+    exec fileserv/tetris - Run tetris game.
+    exec fileserv/snake - Run snake game.
+    exec fileserv/terminal - Run another instance of RefOS terminal.
+    cd /fileserv/ - Change current working directory.
+    printenv - Print all environment variables.
+    setenv - Set an environment variable.
+    time - Display the current system time.
+    exit - Exit RefOS terminal.
+refos:/$ exec fileserv/snake
+Logical timer invalid!
+[2J[1;1H
+[?25l
+_______ __   _ _______ _     _ _______
+|______ | \  | |_____| |____/  |______
+______| |  \_| |     | |    \_ |______
+      Press the space bar to continue...
+[2J[1;1H
+[2;18H[;1;32m█[0m[3;18H[;1;32m█[0m[16;2HLogical timer invalid!
+
+[attached]
